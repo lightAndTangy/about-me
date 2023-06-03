@@ -1,0 +1,99 @@
+.contact {
+  margin-bottom: 100px;
+}
+
+#contact-cta {
+  margin: 30px auto;
+  max-width: 400px;
+}
+
+.contact-links {
+  background-color: rgba(127, 102, 91, 0.15);
+  border: 2px solid var(--chocolate);
+  border-radius: 30px;
+  max-height: 480px;
+  max-width: 420px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-links ul {
+  list-style-type: none;
+}
+
+.contact-links ul li {
+  text-decoration: none;
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  transition: transform 0.3s ease;
+}
+
+.contact-links ul li:hover {
+  transform: translateY(-15px);
+}
+
+.contact-links ul li a, p{
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1.3em;
+}
+
+.contact-links ul li p:hover {
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 6px 5px rgba(0, 0, 0, 0.5);
+}
+
+.contact-links img {
+  width: 50%;
+  height: 50%;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--chocolate);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.tooltip.show {
+  display: block;
+  animation: fadeOut 2s;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@media (max-width: 700px) {
+  .icons {
+    width: 50px;
+    height: 50px;
+  }
+
+  .contact-links ul li {
+    flex-direction: column;
+  }
+}
