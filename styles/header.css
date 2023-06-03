@@ -1,5 +1,4 @@
 header {
-  position: fixed;
   height: 100px;
   width: calc(100% - 3px);
   margin: auto;
