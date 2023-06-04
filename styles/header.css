@@ -8,7 +8,7 @@ header {
 }
 
 #logo {
-  width: 100px;
+  width: 80px;
   top: 0;
   position: fixed;
 }
@@ -39,4 +39,14 @@ a.active {
 nav ul li a:hover {
   background-color: var(--pink);
   color: white;
+}
+
+@media (max-width: 750px) {
+  nav ul li a {
+    font-size: 1.2em;
+  }
+
+  nav ul {
+    gap: 3px;
+  }
 }
